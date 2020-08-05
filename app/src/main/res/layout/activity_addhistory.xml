@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back1"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".addhistory">
+
+        <EditText
+            android:id="@+id/q1"
+            android:layout_width="384dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/backgroundshadow3"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textPersonName"
+            android:text="1) What is the name of your doctor?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/docname"
+            android:layout_width="384dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroundshadow2"
+            android:ems="10"
+            android:hint="Doctor issuing that paticular medicine"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q1" />
+
+        <EditText
+            android:id="@+id/q2"
+            android:layout_width="378dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroundshadow3"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textPersonName"
+            android:text="2) What is the name of your medicine?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/docname" />
+
+        <EditText
+            android:id="@+id/medname_row"
+            android:layout_width="377dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/backgroundshadow2"
+            android:ems="10"
+            android:hint="Full name of prescribed medicine"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q2" />
+
+        <EditText
+            android:id="@+id/q3"
+            android:layout_width="377dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/backgroundshadow3"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textPersonName"
+            android:text="3) What type of problem is this medicine for?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medname_row" />
+
+        <EditText
+            android:id="@+id/illness_name"
+            android:layout_width="374dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/backgroundshadow2"
+            android:ems="10"
+            android:hint="Ex-BloodPressure,Diabetes"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q3" />
+
+        <EditText
+            android:id="@+id/q4"
+            android:layout_width="377dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/backgroundshadow3"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="4) When was this medicine purchased/prescribed ?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/illness_name" />
+
+        <EditText
+            android:id="@+id/date_row"
+            android:layout_width="210dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroundshadow2"
+            android:ems="10"
+            android:hint="dd/mm/yyyy"
+            android:inputType="date"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q4" />
+
+        <EditText
+            android:id="@+id/q5"
+            android:layout_width="382dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroundshadow3"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textPersonName"
+
+            android:text="5) What is the price of your medicine? "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_row" />
+
+        <EditText
+            android:id="@+id/price_row"
+            android:layout_width="215dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroundshadow2"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q5" />
+
+        <EditText
+            android:id="@+id/q6"
+            android:layout_width="379dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroundshadow3"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="6) How many pills/tablets/capsules did u buy ?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price_row" />
+
+        <EditText
+            android:id="@+id/pills"
+            android:layout_width="379dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backgroundshadow2"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q6" />
+
+        <Button
+            android:id="@+id/add_items"
+            android:background="@drawable/backgroundshadow2"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:text="ADD"
+            android:enabled="false"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pills" />
+
+        <Button
+            android:id="@+id/backb"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/backgroundshadow2"
+            android:text="BACK"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/add_items"
+            app:layout_constraintTop_toBottomOf="@+id/pills" />
+
+        <ImageButton
+            android:id="@+id/datepicker"
+            android:layout_width="48dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/date_row"
+            app:layout_constraintTop_toBottomOf="@+id/q4"
+            app:srcCompat="@drawable/date" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

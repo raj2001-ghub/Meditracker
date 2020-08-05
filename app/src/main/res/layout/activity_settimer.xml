@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".settimer">
+
+    <ImageView
+        android:id="@+id/clockimage"
+        android:layout_width="446dp"
+        android:layout_height="564dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="382dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="4dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock2" />
+
+    <EditText
+        android:id="@+id/h1"
+        android:layout_width="429dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="66dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:enabled="false"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="62dp"
+        android:ems="10"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal|center_vertical"
+        android:inputType="textPersonName"
+        android:text="CHOOSE TIME"
+        android:textColor="#AE3517"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeview"
+        android:layout_width="246dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/backgroundshadow2"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:enabled="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h1" />
+
+    <ImageButton
+        android:id="@+id/clockicon"
+        android:layout_width="68dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toEndOf="@+id/timeview"
+        app:layout_constraintTop_toBottomOf="@+id/h1"
+        app:srcCompat="@drawable/clock3" />
+
+    <Button
+        android:id="@+id/savetime"
+        android:layout_width="102dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/backgroundshadow2"
+        android:text="SAVE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeview" />
+
+    <Button
+        android:id="@+id/canceltime"
+        android:layout_width="102dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/backgroundshadow2"
+        android:text="CANCEL"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/savetime"
+        app:layout_constraintTop_toBottomOf="@+id/clockicon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
